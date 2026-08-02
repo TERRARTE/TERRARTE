@@ -1,229 +1,117 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>TERRARTE | Pequeños mundos, hechos a mano</title>
+<title>TERRARTE | Pequeños mundos, hechos a mano</title>
 
-  <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
+<style>
 
-    body {
-      font-family: Georgia, serif;
-      background: #f5f1e8;
-      color: #26382b;
-    }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-    header {
-      padding: 25px 7%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      background: #f5f1e8;
-    }
+html {
+    scroll-behavior: smooth;
+}
 
-    .logo {
-      font-size: 28px;
-      font-weight: bold;
-      letter-spacing: 3px;
-    }
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f1e8;
+    color: #26382b;
+}
 
-    nav a {
-      margin-left: 25px;
-      text-decoration: none;
-      color: #26382b;
-      font-size: 16px;
-    }
+/* ===== NAVEGACIÓN ===== */
 
-    .hero {
-      min-height: 75vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      padding: 60px 20px;
-      background: #dfe6d7;
-    }
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 25px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+}
 
-    .hero h1 {
-      font-size: 70px;
-      letter-spacing: 8px;
-      margin-bottom: 20px;
-    }
+.logo {
+    font-family: Georgia, serif;
+    font-size: 25px;
+    letter-spacing: 4px;
+    font-weight: bold;
+}
 
-    .hero p {
-      font-size: 22px;
-      margin-bottom: 35px;
-    }
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-left: 28px;
+    font-size: 14px;
+}
 
-    .button {
-      display: inline-block;
-      padding: 15px 30px;
-      background: #26382b;
-      color: white;
-      text-decoration: none;
-      border-radius: 30px;
-      font-size: 16px;
-    }
+/* ===== PORTADA ===== */
 
-    .section {
-      padding: 80px 7%;
-      text-align: center;
-    }
+.hero {
+    min-height: 100vh;
+    position: relative;
 
-    .section h2 {
-      font-size: 38px;
-      margin-bottom: 20px;
-    }
+    background-image:
+        linear-gradient(
+            rgba(20, 35, 25, 0.42),
+            rgba(20, 35, 25, 0.42)
+        ),
+        url("terrario-7.jpeg");
 
-    .section p {
-      max-width: 650px;
-      margin: auto;
-      line-height: 1.7;
-      font-family: Arial, sans-serif;
-    }
+    background-size: cover;
+    background-position: center;
 
-    .products {
-      margin-top: 45px;
-      display: flex;
-      justify-content: center;
-      gap: 25px;
-      flex-wrap: wrap;
-    }
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-    .product {
-      width: 280px;
-      min-height: 250px;
-      background: white;
-      border-radius: 18px;
-      padding: 25px;
-      box-shadow: 0 5px 20px rgba(0,0,0,0.08);
-    }
+    text-align: center;
+    color: white;
+}
 
-    .product h3 {
-      margin-top: 20px;
-      font-size: 22px;
-    }
+.hero-content {
+    padding: 30px;
+}
 
-    footer {
-      padding: 35px;
-      text-align: center;
-      background: #26382b;
-      color: white;
-    }
+.hero h1 {
+    font-family: Georgia, serif;
+    font-size: clamp(55px, 10vw, 100px);
+    letter-spacing: 12px;
+    margin-bottom: 15px;
+}
 
-    @media (max-width: 600px) {
-      .hero h1 {
-        font-size: 45px;
-      }
+.hero p {
+    font-family: Georgia, serif;
+    font-size: 22px;
+    font-style: italic;
+    margin-bottom: 35px;
+}
 
-      nav {
-        display: none;
-      }
-    }
-  </style>
-</head>
+.button {
+    display: inline-block;
+    padding: 15px 32px;
+    border: 1px solid white;
+    border-radius: 30px;
 
-<body>
+    color: white;
+    text-decoration: none;
 
-  <header>
-    <div class="logo">TERRARTE</div>
+    transition: 0.3s;
+}
 
-    <nav>
-      <a href="#inicio">Inicio</a>
-      <a href="#coleccion">Colección</a>
-      <a href="#nosotros">Nosotros</a>
-      <a href="#contacto">Contacto</a>
-    </nav>
-  </header>
+.button:hover {
+    background: white;
+    color: #26382b;
+}
 
-  <section class="hero" id="inicio">
-    <div>
-      <h1>TERRARTE</h1>
+/* ===== INTRO ===== */
 
-      <p>
-        Pequeños mundos, hechos a mano.
-      </p>
-
-      <a href="#coleccion" class="button">
-        Ver colección
-      </a>
-    </div>
-  </section>
-
-  <section class="section" id="coleccion">
-
-    <h2>Nuestra colección 🌿</h2>
-
-    <p>
-      Descubre nuestros pequeños ecosistemas creados
-      cuidadosamente para llevar un pedacito de naturaleza
-      a tu hogar.
-    </p>
-
-    <div class="products">
-
-      <div class="product">
-        <h3>Próximamente</h3>
-        <p>
-          Aquí aparecerá uno de nuestros terrarios.
-        </p>
-      </div>
-
-      <div class="product">
-        <h3>Próximamente</h3>
-        <p>
-          Aquí aparecerá uno de nuestros terrarios.
-        </p>
-      </div>
-
-      <div class="product">
-        <h3>Próximamente</h3>
-        <p>
-          Aquí aparecerá uno de nuestros terrarios.
-        </p>
-      </div>
-
-    </div>
-
-  </section>
-
-  <section class="section" id="nosotros">
-
-    <h2>Sobre TERRARTE</h2>
-
-    <p>
-      Creamos pequeños mundos naturales dentro de piezas únicas,
-      combinando naturaleza, creatividad y artesanía.
-    </p>
-
-  </section>
-
-  <section class="section" id="contacto">
-
-    <h2>¿Te gusta alguno?</h2>
-
-    <p>
-      Muy pronto podrás descubrir nuestra colección y realizar
-      tus pedidos.
-    </p>
-
-    <br>
-
-    <a href="#" class="button">
-      Contactar
-    </a>
-
-  </section>
-
-  <footer>
-    © 2026 TERRARTE · Pequeños mundos, hechos a mano.
-  </footer>
-
-</body>
-</html>
+.intro {
+    padding: 100px
