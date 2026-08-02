@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>TERRARTE | Pequeños mundos, hechos a mano</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Georgia, serif;
+      background: #f5f1e8;
+      color: #26382b;
+    }
+
+    header {
+      padding: 25px 7%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #f5f1e8;
+    }
+
+    .logo {
+      font-size: 28px;
+      font-weight: bold;
+      letter-spacing: 3px;
+    }
+
+    nav a {
+      margin-left: 25px;
+      text-decoration: none;
+      color: #26382b;
+      font-size: 16px;
+    }
+
+    .hero {
+      min-height: 75vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 60px 20px;
+      background: #dfe6d7;
+    }
+
+    .hero h1 {
+      font-size: 70px;
+      letter-spacing: 8px;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 22px;
+      margin-bottom: 35px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 15px 30px;
+      background: #26382b;
+      color: white;
+      text-decoration: none;
+      border-radius: 30px;
+      font-size: 16px;
+    }
+
+    .section {
+      padding: 80px 7%;
+      text-align: center;
+    }
+
+    .section h2 {
+      font-size: 38px;
+      margin-bottom: 20px;
+    }
+
+    .section p {
+      max-width: 650px;
+      margin: auto;
+      line-height: 1.7;
+      font-family: Arial, sans-serif;
+    }
+
+    .products {
+      margin-top: 45px;
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      flex-wrap: wrap;
+    }
+
+    .product {
+      width: 280px;
+      min-height: 250px;
+      background: white;
+      border-radius: 18px;
+      padding: 25px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    }
+
+    .product h3 {
+      margin-top: 20px;
+      font-size: 22px;
+    }
+
+    footer {
+      padding: 35px;
+      text-align: center;
+      background: #26382b;
+      color: white;
+    }
+
+    @media (max-width: 600px) {
+      .hero h1 {
+        font-size: 45px;
+      }
+
+      nav {
+        display: none;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="logo">TERRARTE</div>
+
+    <nav>
+      <a href="#inicio">Inicio</a>
+      <a href="#coleccion">Colección</a>
+      <a href="#nosotros">Nosotros</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="inicio">
+    <div>
+      <h1>TERRARTE</h1>
+
+      <p>
+        Pequeños mundos, hechos a mano.
+      </p>
+
+      <a href="#coleccion" class="button">
+        Ver colección
+      </a>
+    </div>
+  </section>
+
+  <section class="section" id="coleccion">
+
+    <h2>Nuestra colección 🌿</h2>
+
+    <p>
+      Descubre nuestros pequeños ecosistemas creados
+      cuidadosamente para llevar un pedacito de naturaleza
+      a tu hogar.
+    </p>
+
+    <div class="products">
+
+      <div class="product">
+        <h3>Próximamente</h3>
+        <p>
+          Aquí aparecerá uno de nuestros terrarios.
+        </p>
+      </div>
+
+      <div class="product">
+        <h3>Próximamente</h3>
+        <p>
+          Aquí aparecerá uno de nuestros terrarios.
+        </p>
+      </div>
+
+      <div class="product">
+        <h3>Próximamente</h3>
+        <p>
+          Aquí aparecerá uno de nuestros terrarios.
+        </p>
+      </div>
+
+    </div>
+
+  </section>
+
+  <section class="section" id="nosotros">
+
+    <h2>Sobre TERRARTE</h2>
+
+    <p>
+      Creamos pequeños mundos naturales dentro de piezas únicas,
+      combinando naturaleza, creatividad y artesanía.
+    </p>
+
+  </section>
+
+  <section class="section" id="contacto">
+
+    <h2>¿Te gusta alguno?</h2>
+
+    <p>
+      Muy pronto podrás descubrir nuestra colección y realizar
+      tus pedidos.
+    </p>
+
+    <br>
+
+    <a href="#" class="button">
+      Contactar
+    </a>
+
+  </section>
+
+  <footer>
+    © 2026 TERRARTE · Pequeños mundos, hechos a mano.
+  </footer>
+
+</body>
+</html>
